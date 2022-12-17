@@ -63,8 +63,8 @@
             this.label1.Size = new System.Drawing.Size(173, 30);
             this.label1.TabIndex = 9;
             this.label1.Text = "Восстанавление";
-            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
-            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseDown);
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label1_MouseMove);
             // 
             // textBox1
             // 
