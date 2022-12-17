@@ -11,7 +11,8 @@ namespace HAHAton_project
     internal class DB
     {   
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=KOMPUTER\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
-        //ConfigurationManager.ConnectionStrings["RosDB"].ConnectionString
+        //KOMPUTER
+        //HOME-PC
 
         public void OpenConnection()
         {
