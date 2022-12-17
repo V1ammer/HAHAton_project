@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPanel_Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminPanel_Window.Designer.cs">
-      <DependentUpon>AdminPanel_Window.cs</DependentUpon>
-    </Compile>
     <Compile Include="Authentication_Window.cs">
       <SubType>Form</SubType>
     </Compile>
