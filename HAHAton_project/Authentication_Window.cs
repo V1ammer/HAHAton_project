@@ -93,9 +93,6 @@ namespace HAHAton_project
 
         private void LoginField_Leave(object sender, EventArgs e)
         {
-            //if (loginField.Text == "") Label_loginError.Text = "Введите логин";
-            //else Label_loginError.Text = string.Empty;
-
             if (loginField.Text == "")
             {
                 loginField.Text = "Введите логин";
@@ -105,9 +102,6 @@ namespace HAHAton_project
 
         private void PassField_Leave(object sender, EventArgs e)
         {
-            //if (passField.Text == "") Label_passError.Text = "Введите пароль";
-            //else Label_passError.Text = string.Empty;
-
             if (passField.Text == "")
             {
                 passField.Text = "Введите пароль";
