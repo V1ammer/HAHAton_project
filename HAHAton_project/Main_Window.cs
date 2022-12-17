@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
-using System.Data.SqlClient;
 
 namespace HAHAton_project
 {
@@ -24,11 +22,6 @@ namespace HAHAton_project
         {
             AW = new Authentication_Window { StartPosition = FormStartPosition.CenterParent };
             AW.ShowDialog();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }
