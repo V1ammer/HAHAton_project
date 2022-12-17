@@ -36,13 +36,13 @@ namespace HAHAton_project
 
                 DB db = new DB();
 
-                //db.OpenConnection();
+                db.OpenConnection();
 
                 DataTable table = new DataTable();
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
 
-                SqlCommand command = new SqlCommand("SELECT * FROM Users WHERE 'Login' = @userLogin AND 'Password' = @userPass", db.GetConnection());
+                SqlCommand command = new SqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
 
                 command.Parameters.Add("@userLogin", SqlDbType.VarChar).Value = userLogin;
                 command.Parameters.Add("@userPass", SqlDbType.VarChar).Value = userPass;

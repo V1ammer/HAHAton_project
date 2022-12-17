@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,6 +60,12 @@ namespace HAHAton_project
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
+        }
+
+        private void Button_recovery_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text != "")
+                MessageBox.Show("Запрос отправлен администратору");
         }
     }
 }

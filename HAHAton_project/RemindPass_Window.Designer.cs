@@ -31,12 +31,9 @@
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.Label_Login = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Label_Mail = new System.Windows.Forms.Label();
             this.Button_recovery = new System.Windows.Forms.Button();
-            this.Label_Or = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // closeButton
@@ -73,13 +70,6 @@
             this.textBox1.Size = new System.Drawing.Size(131, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(17, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 20);
-            this.textBox3.TabIndex = 2;
-            // 
             // Label_Login
             // 
             this.Label_Login.AutoSize = true;
@@ -98,16 +88,6 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 14;
             // 
-            // Label_Mail
-            // 
-            this.Label_Mail.AutoSize = true;
-            this.Label_Mail.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Label_Mail.Location = new System.Drawing.Point(15, 117);
-            this.Label_Mail.Name = "Label_Mail";
-            this.Label_Mail.Size = new System.Drawing.Size(40, 13);
-            this.Label_Mail.TabIndex = 15;
-            this.Label_Mail.Text = "Почта";
-            // 
             // Button_recovery
             // 
             this.Button_recovery.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -117,16 +97,7 @@
             this.Button_recovery.TabIndex = 3;
             this.Button_recovery.Text = "Восстановить";
             this.Button_recovery.UseVisualStyleBackColor = true;
-            // 
-            // Label_Or
-            // 
-            this.Label_Or.AutoSize = true;
-            this.Label_Or.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Label_Or.Location = new System.Drawing.Point(159, 109);
-            this.Label_Or.Name = "Label_Or";
-            this.Label_Or.Size = new System.Drawing.Size(30, 13);
-            this.Label_Or.TabIndex = 22;
-            this.Label_Or.Text = "ИЛИ";
+            this.Button_recovery.Click += new System.EventHandler(this.Button_recovery_Click);
             // 
             // RemindPass_Window
             // 
@@ -134,12 +105,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(248, 236);
-            this.Controls.Add(this.Label_Or);
             this.Controls.Add(this.Button_recovery);
-            this.Controls.Add(this.Label_Mail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Label_Login);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.closeButton);
@@ -157,11 +125,8 @@
         private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label Label_Login;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label Label_Mail;
         private System.Windows.Forms.Button Button_recovery;
-        private System.Windows.Forms.Label Label_Or;
     }
 }
