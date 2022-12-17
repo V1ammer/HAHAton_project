@@ -10,7 +10,7 @@ namespace HAHAton_project
 {
     internal class DB
     {   
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=KOMPUTER\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=HOME-PC\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
         //KOMPUTER
         //HOME-PC
 
