@@ -140,5 +140,11 @@ namespace HAHAton_project
             RemindW = new RemindPass_Window();
             RemindW.ShowDialog();
         }
+
+
+        private void Button_helpDev_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

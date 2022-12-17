@@ -37,6 +37,7 @@
             this.closeButton = new System.Windows.Forms.Label();
             this.Label_loginError = new System.Windows.Forms.Label();
             this.Label_passError = new System.Windows.Forms.Label();
+            this.Button_helpDev = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Label_Login
@@ -132,11 +133,23 @@
             this.Label_passError.Size = new System.Drawing.Size(0, 13);
             this.Label_passError.TabIndex = 10;
             // 
+            // Button_helpDev
+            // 
+            this.Button_helpDev.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Button_helpDev.Location = new System.Drawing.Point(174, 227);
+            this.Button_helpDev.Name = "Button_helpDev";
+            this.Button_helpDev.Size = new System.Drawing.Size(25, 25);
+            this.Button_helpDev.TabIndex = 11;
+            this.Button_helpDev.UseVisualStyleBackColor = false;
+            this.Button_helpDev.Click += new System.EventHandler(this.Button_helpDev_Click);
+            // 
             // Authentication_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(215, 264);
+            this.Controls.Add(this.Button_helpDev);
             this.Controls.Add(this.Label_passError);
             this.Controls.Add(this.Label_loginError);
             this.Controls.Add(this.closeButton);
@@ -170,5 +183,6 @@
         private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Label Label_loginError;
         private System.Windows.Forms.Label Label_passError;
+        private System.Windows.Forms.Button Button_helpDev;
     }
 }

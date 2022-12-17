@@ -9,8 +9,8 @@ using System.Data.SqlClient;
 namespace HAHAton_project
 {
     internal class DB
-    {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=HOME-PC\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
+    {   
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=KOMPUTER\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
         //ConfigurationManager.ConnectionStrings["RosDB"].ConnectionString
 
         public void OpenConnection()
