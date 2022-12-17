@@ -16,6 +16,11 @@ namespace HAHAton_project
         public Authentication_Window()
         {
             InitializeComponent();
+
+            loginField.Text = "Введите логин";
+            loginField.ForeColor = Color.Gray;
+            passField.Text = "Введите пароль";
+            passField.ForeColor = Color.Gray;
         }
 
         public bool enter_account = false;
@@ -88,14 +93,45 @@ namespace HAHAton_project
 
         private void LoginField_Leave(object sender, EventArgs e)
         {
-            if (loginField.Text == "") Label_loginError.Text = "Пусто*";
-            else Label_loginError.Text = string.Empty;
+            //if (loginField.Text == "") Label_loginError.Text = "Введите логин";
+            //else Label_loginError.Text = string.Empty;
+
+            if (loginField.Text == "")
+            {
+                loginField.Text = "Введите логин";
+                loginField.ForeColor = Color.Gray;
+            }
         }
 
         private void PassField_Leave(object sender, EventArgs e)
         {
-            if (passField.Text == "") Label_passError.Text = "Пусто*";
-            else Label_passError.Text = string.Empty;
+            //if (passField.Text == "") Label_passError.Text = "Введите пароль";
+            //else Label_passError.Text = string.Empty;
+
+            if (passField.Text == "")
+            {
+                passField.Text = "Введите пароль";
+                passField.ForeColor = Color.Gray;
+            }
+        }
+
+        private void loginField_Enter(object sender, EventArgs e)
+        {
+            if (loginField.Text == "Введите логин")
+            {
+                loginField.Text = "";
+                loginField.ForeColor = Color.Black;
+            }
+                
+        }
+
+        private void passField_Enter(object sender, EventArgs e)
+        {
+            if (passField.Text == "Введите пароль")
+            {
+                passField.Text = "";
+                passField.ForeColor = Color.Black;
+            }
         }
 
         RemindPass_Window RemindW;
@@ -103,6 +139,6 @@ namespace HAHAton_project
         {
             RemindW = new RemindPass_Window();
             RemindW.ShowDialog();
-        }
+        } 
     }
 }
