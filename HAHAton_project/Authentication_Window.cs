@@ -57,6 +57,9 @@ namespace HAHAton_project
                     manager.GetPrivateString("main", "enter");
                     manager.WritePrivateString("main", "enter", "true");
 
+                    manager.GetPrivateString("main", "access");
+                    manager.WritePrivateString("main", "access", table.Rows[0][3].ToString());
+
                     this.Close();
                 }
                 else
