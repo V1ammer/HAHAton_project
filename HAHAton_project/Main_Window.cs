@@ -39,13 +39,21 @@ namespace HAHAton_project
         {
             DB db = new DB();
 
-            MySqlDataAdapter dataAdapter = new MySqlDataAdapter("SELECT * FROM Services", db.GetConnection());
+            MySqlDataAdapter dataAdapter_services = new MySqlDataAdapter("SELECT * FROM Services", db.GetConnection());
 
-            DataSet dataSet = new DataSet();
+            MySqlDataAdapter dataAdapter_orders = new MySqlDataAdapter("SELECT * FROM Orders", db.GetConnection());
 
-            dataAdapter.Fill(dataSet);
+            DataSet dataSet_services = new DataSet();
 
-            dataGridView1.DataSource= dataSet.Tables[0];
+            DataSet dataSet_orders = new DataSet();
+
+            dataAdapter_services.Fill(dataSet_services);
+
+            dataAdapter_orders.Fill(dataSet_orders);
+
+            dataGridView1.DataSource= dataSet_services.Tables[0];
+
+            dataGridView2.DataSource= dataSet_orders.Tables[0];
         }
     }
 }
