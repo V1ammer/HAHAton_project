@@ -66,7 +66,7 @@
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(150, 20);
             this.loginField.TabIndex = 2;
-            this.loginField.Enter += new System.EventHandler(this.loginField_Enter);
+            this.loginField.Enter += new System.EventHandler(this.LoginField_Enter);
             this.loginField.Leave += new System.EventHandler(this.LoginField_Leave);
             // 
             // passField
@@ -75,7 +75,7 @@
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(150, 20);
             this.passField.TabIndex = 3;
-            this.passField.Enter += new System.EventHandler(this.passField_Enter);
+            this.passField.Enter += new System.EventHandler(this.PassField_Enter);
             this.passField.Leave += new System.EventHandler(this.PassField_Leave);
             // 
             // linkLabel2

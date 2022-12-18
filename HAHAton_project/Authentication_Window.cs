@@ -53,11 +53,11 @@ namespace HAHAton_project
 
                 if (table.Rows.Count > 0)
                 {
-                    MessageBox.Show("Yes");
+                    MessageBox.Show("Вход");
                     this.Close();
                 }
                 else
-                    MessageBox.Show("No");
+                    MessageBox.Show("Неверный пароль или логин");
             }
         }
 
@@ -110,7 +110,7 @@ namespace HAHAton_project
             }
         }
 
-        private void loginField_Enter(object sender, EventArgs e)
+        private void LoginField_Enter(object sender, EventArgs e)
         {
             if (loginField.Text == "Введите логин")
             {
@@ -120,7 +120,7 @@ namespace HAHAton_project
                 
         }
 
-        private void passField_Enter(object sender, EventArgs e)
+        private void PassField_Enter(object sender, EventArgs e)
         {
             if (passField.Text == "Введите пароль")
             {
