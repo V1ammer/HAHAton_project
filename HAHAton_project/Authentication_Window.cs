@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,12 +41,19 @@ namespace HAHAton_project
 
                 DataTable table = new DataTable();
 
-                SqlDataAdapter adapter = new SqlDataAdapter();
+                //SqlDataAdapter adapter = new SqlDataAdapter();
 
-                SqlCommand command = new SqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-                command.Parameters.Add("@userLogin", SqlDbType.VarChar).Value = userLogin;
-                command.Parameters.Add("@userPass", SqlDbType.VarChar).Value = userPass;
+                //SqlCommand command = new SqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
+
+                MySqlCommand command = new MySqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
+
+                //command.Parameters.Add("@userLogin", SqlDbType.VarChar).Value = userLogin;
+                //command.Parameters.Add("@userPass", SqlDbType.VarChar).Value = userPass;
+
+                command.Parameters.Add("@userLogin", MySqlDbType.VarChar).Value = userLogin;
+                command.Parameters.Add("@userPass", MySqlDbType.VarChar).Value = userPass;
 
                 adapter.SelectCommand = command;
                 adapter.Fill(table);

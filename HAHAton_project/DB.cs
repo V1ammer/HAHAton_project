@@ -5,14 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace HAHAton_project
 {
     internal class DB
-    {   
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=HOME-PC\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
+    {
+        //SqlConnection sqlConnection = new SqlConnection(@"Data Source=HOME-PC\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
         //KOMPUTER
         //HOME-PC
+
+        MySqlConnection sqlConnection = new MySqlConnection("server=31.31.198.22;port=3306;database=u1878080_rosdb;username=u1878080_admin;password=KringeSquad");
 
         public void OpenConnection()
         {
@@ -30,7 +33,7 @@ namespace HAHAton_project
             }
         }
 
-        public SqlConnection GetConnection()
+        public MySqlConnection GetConnection()
         {
             return sqlConnection;
         }
