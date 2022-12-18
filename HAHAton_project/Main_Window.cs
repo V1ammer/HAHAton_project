@@ -55,5 +55,11 @@ namespace HAHAton_project
 
             dataGridView2.DataSource= dataSet_orders.Tables[0];
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //INIManager manager = new INIManager("./app.ini");
+            //manager.GetHashCode();
+        }
     }
 }
