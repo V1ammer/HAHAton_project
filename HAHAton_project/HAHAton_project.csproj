@@ -105,6 +105,7 @@
     <Compile Include="Authentication_Window.Designer.cs">
       <DependentUpon>Authentication_Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuration.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="Main_Window.cs">
       <SubType>Form</SubType>

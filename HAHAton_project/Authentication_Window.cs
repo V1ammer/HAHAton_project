@@ -53,6 +53,10 @@ namespace HAHAton_project
 
                 if (table.Rows.Count > 0)
                 {
+                    INIManager manager = new INIManager("./app.ini");
+                    manager.GetPrivateString("main", "enter");
+                    manager.WritePrivateString("main", "enter", "true");
+
                     this.Close();
                 }
                 else

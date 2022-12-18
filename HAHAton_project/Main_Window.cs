@@ -24,8 +24,13 @@ namespace HAHAton_project
         Authentication_Window AW;
         private void Form1_Load(object sender, EventArgs e)
         {
-            AW = new Authentication_Window { StartPosition = FormStartPosition.CenterParent };
-            AW.ShowDialog();
+            INIManager manager = new INIManager("./app.ini");
+            string check =manager.GetPrivateString("main", "enter");
+            if (check != "true") {
+                AW = new Authentication_Window { StartPosition = FormStartPosition.CenterParent };
+                AW.ShowDialog();
+            }
+            
         }
     }
 }
