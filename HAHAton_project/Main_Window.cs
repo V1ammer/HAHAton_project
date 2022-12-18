@@ -26,7 +26,8 @@ namespace HAHAton_project
         private void Form1_Load(object sender, EventArgs e)
         {
             INIManager manager = new INIManager("./app.ini");
-            string check =manager.GetPrivateString("main", "enter");
+            string check = manager.GetPrivateString("main", "enter");
+            //acces = Convert.ToBoolean(manager.GetPrivateString("main", "access"));
             if (check != "true") {
                 AW = new Authentication_Window { StartPosition = FormStartPosition.CenterParent };
                 AW.ShowDialog();
