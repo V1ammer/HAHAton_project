@@ -69,6 +69,24 @@
             this.Button_Workers.Text = "Сотрудники";
             this.Button_Workers.UseVisualStyleBackColor = false;
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button2.Location = new System.Drawing.Point(3, 59);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(195, 50);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Услуги";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button3.Location = new System.Drawing.Point(3, 115);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(195, 50);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Сотрудники";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
