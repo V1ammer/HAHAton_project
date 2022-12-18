@@ -41,16 +41,9 @@ namespace HAHAton_project
 
                 DataTable table = new DataTable();
 
-                //SqlDataAdapter adapter = new SqlDataAdapter();
-
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-                //SqlCommand command = new SqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
-
                 MySqlCommand command = new MySqlCommand($"SELECT * FROM Users WHERE Login = '{@userLogin}' AND Password = '{@userPass}'", db.GetConnection());
-
-                //command.Parameters.Add("@userLogin", SqlDbType.VarChar).Value = userLogin;
-                //command.Parameters.Add("@userPass", SqlDbType.VarChar).Value = userPass;
 
                 command.Parameters.Add("@userLogin", MySqlDbType.VarChar).Value = userLogin;
                 command.Parameters.Add("@userPass", MySqlDbType.VarChar).Value = userPass;

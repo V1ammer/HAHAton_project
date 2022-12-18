@@ -11,9 +11,6 @@ namespace HAHAton_project
 {
     internal class DB
     {
-        //SqlConnection sqlConnection = new SqlConnection(@"Data Source=HOME-PC\SQLEXPRESS;Initial Catalog=ROSDB.MDF;Integrated Security=True");
-        //KOMPUTER
-        //HOME-PC
 
         MySqlConnection sqlConnection = new MySqlConnection("server=31.31.198.22;port=3306;database=u1878080_rosdb;username=u1878080_admin;password=KringeSquad");
 
