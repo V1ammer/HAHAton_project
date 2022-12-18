@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,19 @@ namespace HAHAton_project
                 AW.ShowDialog();
             }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DB db = new DB();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter("SELECT * FROM Services", db.GetConnection());
+
+            DataSet dataSet = new DataSet();
+
+            dataAdapter.Fill(dataSet);
+
+            dataGridView1.DataSource= dataSet.Tables[0];
         }
     }
 }

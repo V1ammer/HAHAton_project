@@ -31,12 +31,13 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Button_Workers = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Button_settings = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Button_settings = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,6 +80,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(860, 52);
             this.panel1.TabIndex = 1;
+            // 
+            // Button_settings
+            // 
+            this.Button_settings.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Button_settings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Button_settings.Location = new System.Drawing.Point(762, 13);
+            this.Button_settings.Name = "Button_settings";
+            this.Button_settings.Size = new System.Drawing.Size(90, 25);
+            this.Button_settings.TabIndex = 0;
+            this.Button_settings.Text = "Настройки";
+            this.Button_settings.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -127,6 +139,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
             this.tableLayoutPanel1.Controls.Add(this.tabControl1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(218, 64);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -134,16 +147,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(654, 300);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // Button_settings
+            // button1
             // 
-            this.Button_settings.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Button_settings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Button_settings.Location = new System.Drawing.Point(762, 13);
-            this.Button_settings.Name = "Button_settings";
-            this.Button_settings.Size = new System.Drawing.Size(90, 25);
-            this.Button_settings.TabIndex = 0;
-            this.Button_settings.Text = "Настройки";
-            this.Button_settings.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(411, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "показать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main_Window
             // 
@@ -179,6 +192,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button Button_settings;
+        private System.Windows.Forms.Button button1;
     }
 }
 
