@@ -54,6 +54,7 @@ namespace HAHAton_project
                 if (table.Rows.Count > 0)
                 {
                     MessageBox.Show("Вход");
+
                     this.Close();
                 }
                 else

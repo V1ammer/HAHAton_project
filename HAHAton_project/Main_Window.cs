@@ -12,9 +12,13 @@ namespace HAHAton_project
 {
     public partial class Main_Window : Form
     {
+        public bool acces = false;
         public Main_Window()
         {
             InitializeComponent();
+
+            if (acces != true) { Button_Workers.Visible = false; }
+            
         }
 
         Authentication_Window AW;
